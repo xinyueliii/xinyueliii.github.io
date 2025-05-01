@@ -10,30 +10,39 @@ site.atom_feed.hide != true %}
         ><i class="fab fa-github" aria-hidden="true"></i> GitHub</a
       >
     </li>
-    {% endif %} {% if site.author.bitbucket %}
+    <!-- {% endif %} {% if site.author.bitbucket %}
     <li>
       <a href="http://bitbucket.org/{{ site.author.bitbucket }}"
         ><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a
       >
-    </li>
-    {% endif %} {% if site.atom_feed.hide != true %}
-    <li>
+    </li> -->
+    <!-- {% endif %} {% if site.atom_feed.hide != true %} -->
+    <!-- <li>
       <a
         href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"
         ><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{
         site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a
       >
-    </li>
+    </li> -->
     {% endif %}
   </ul>
 </div>
 {% endif %}
 
+<!-- Add ClustrMaps before copyright info -->
+<div style="text-align: center; margin-bottom: 20px">
+  <script
+    type="text/javascript"
+    id="clustrmaps"
+    src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=250&t=tt&d=rsHaSFGPfPKDiDffxDJZIpob9_vCs4HMwMpciyb18mU&co=000000&cmo=49db67&cmn=ff5353&ct=ffffff"
+  ></script>
+</div>
+
 <div class="page__footer-copyright">
   &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{
   site.data.ui-text[site.locale].powered_by | default: "Powered by" }}
   <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp;
-  <a href="https://github.com/academicpages/xinyueliii.github.io"
+  <a href="https://github.com/academicpages/AcademicPages.github.io"
     >AcademicPages</a
   >, a fork of
   <a
